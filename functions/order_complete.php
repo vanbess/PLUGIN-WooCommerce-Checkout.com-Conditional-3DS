@@ -8,7 +8,6 @@ add_filter('woocommerce_thankyou_order_received_text', 'sbwc_ccom_fix_order_comp
 function sbwc_ccom_fix_order_complete_text($str, $order)
 {
 
-    // $order = wc_get_order('1234');
     $payment_method = $order->get_payment_method();
 
     // Checkout.com payment gateway list
